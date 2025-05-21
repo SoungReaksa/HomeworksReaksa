@@ -1,0 +1,80 @@
+[
+    {
+        "name": "Reaksa",
+        "age": 21,
+        "scores": [
+            90,
+            80,
+            80,
+            90
+        ],
+        "average_score": 85,
+        "grade": "B",
+        "id": "681acfbcb24ba"
+    },
+    {
+        "name": "Reaksa",
+        "age": 21,
+        "scores": [
+            90,
+            80,
+            80,
+            90
+        ],
+        "average_score": 85,
+        "grade": "B",
+        "id": "681ad199279d3"
+    },
+    {
+        "name": "Reaksa",
+        "age": 21,
+        "scores": [
+            90,
+            80,
+            80,
+            90
+        ],
+        "average_score": 85,
+        "grade": "B",
+        "id": "681ad1fe16ea1"
+    },
+    {
+        "name": "Reaksa",
+        "age": 21,
+        "scores": [
+            90,
+            80,
+            80,
+            90
+        ],
+        "average_score": 85,
+        "grade": "B",
+        "id": "681ad2594f60b"
+    },
+    {
+        "name": "Reaksa",
+        "age": 21,
+        "scores": [
+            90,
+            80,
+            80,
+            90
+        ],
+        "average_score": 85,
+        "grade": "B",
+        "id": "681ad2606ea9a"
+    },
+    {
+        "name": "Reaksa",
+        "age": 21,
+        "scores": [
+            90,
+            80,
+            80,
+            90
+        ],
+        "average_score": 85,
+        "grade": "B",
+        "id": "681ad263c7bb6"
+    }
+]
