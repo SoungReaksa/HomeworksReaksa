@@ -1,16 +1,16 @@
 <?php
-    //script.php
-    if ( $_SERVER["REQUEST_METHOD"] == "POST") {
-        // Get the input value from the form
-         $inputValue = $_POST['userName'] ?? '';
-        // $inputValue = isset($_POST['userName']) ? $_POST['userName'] : '';
-        //using get method
-       // $inputValue = $_GET['userName'] ?? '';
-        
-        // Process the input value (for example, you can save it to a database or display it)
-        echo "You submitted: " . htmlspecialchars($inputValue);
-        echo "<br/>You submitted: $inputValue";
-    } else {
-        echo "No data submitted.";
-    }
+// Indexed Array
+$fruits = ["Apple", "Banana", "Orange"];
+echo $fruits[1]; // លទ្ធផល: Banana
+
+// Associative Array
+$student = ["name" => "Sok", "age" => 20];
+echo $student["name"]; // លទ្ធផល: Sok
+
+// Multidimensional Array
+$classes = [
+    ["Sok", "Srey"],
+    ["Dara", "Vicheka"]
+];
+echo $classes[1][0]; // លទ្ធផល: Dara
 ?>

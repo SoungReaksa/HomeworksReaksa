@@ -76,5 +76,18 @@
         "average_score": 85,
         "grade": "B",
         "id": "681ad263c7bb6"
+    },
+    {
+        "name": "Soung Reaksa",
+        "age": 20,
+        "scores": [
+            99,
+            88,
+            77,
+            88
+        ],
+        "average_score": 88,
+        "grade": "B",
+        "id": "683f9794686b2"
     }
 ]

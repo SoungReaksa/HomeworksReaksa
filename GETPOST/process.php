@@ -9,9 +9,14 @@ if (isset($_GET['query'])) {
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $username = $_POST['username'];
   $email = $_POST['email'];
+   $phone = $_POST['phone'];
   $password = $_POST['password'];
+  $gender = $_POST['gender'];
   echo "Username: " . htmlspecialchars($username);
   echo "Email: " . htmlspecialchars($email);
-  echo "password: " . htmlspecialchars($password);
+  echo "Phone: " . htmlspecialchars($phone);
+  echo "Password: " . htmlspecialchars($password);
+  echo "Gender: " . htmlspecialchars($gender);
+  
 }
 ?>
