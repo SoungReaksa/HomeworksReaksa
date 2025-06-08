@@ -20,7 +20,7 @@
             text-align: center;
         }
 
-        input[type="text"], input[type="submit"] {
+        input[type="text"], input[type="submit"], input[type="reset"], button {
             width: 90%;
             padding: 10px;
             margin: 10px 0;
@@ -36,6 +36,28 @@
 
         input[type="submit"]:hover {
             background-color: #45a049;
+        }
+
+        input[type="reset"] {
+            background-color: #f44336;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        input[type="reset"]:hover {
+            background-color: #d32f2f;
+        }
+
+        button.clear-results {
+            background-color: #2196F3;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button.clear-results:hover {
+            background-color: #1976D2;
         }
 
         h2, h3 {
@@ -59,6 +81,7 @@
             <label>Replace with (optional):</label><br>
             <input type="text" name="replace_word"><br>
             <input type="submit" value="Process">
+            <input type="reset" value="Clear Form">
         </form>
 
         <?php
@@ -67,7 +90,7 @@
             $search = $_POST["search_word"];
             $replace = $_POST["replace_word"];
 
-            echo "<div class='results'>";
+            echo "<div class='results' id='results'>";
             echo "<h3>Results:</h3>";
             echo "Length: " . strlen($input) . "<br>";
             echo "Uppercase: " . strtoupper($input) . "<br>";
@@ -84,9 +107,21 @@
             } else {
                 echo "No email found.<br>";
             }
+
+            // ប៊ូតុង Clear Results
+            echo "<button class='clear-results' onclick='clearResults()'>Clear Results</button>";
             echo "</div>";
         }
         ?>
     </div>
+
+    <script>
+        function clearResults() {
+            const resultDiv = document.getElementById('results');
+            if (resultDiv) {
+                resultDiv.remove(); // លុប div.results ចោល
+            }
+        }
+    </script>
 </body>
 </html>
